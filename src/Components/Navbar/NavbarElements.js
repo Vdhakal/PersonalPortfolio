@@ -9,12 +9,13 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: sticky;
   top: 0;
   z-index: 10;
   border-radius: 0% 0% 20% 20%;
-  box-shadow:         5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  backdrop-filter: blur(2.5px);
 
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;

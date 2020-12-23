@@ -12,7 +12,7 @@ import {
 import './Button.css';
 const Navbar = () => {
     return (
-        <>
+        
         <Nav>
             <NavbarContainer>
                 <NavLogo to='/'>VD</NavLogo>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </NavBtn>
             </NavbarContainer>
         </Nav>
-       </>
+       
     )
 }
 
