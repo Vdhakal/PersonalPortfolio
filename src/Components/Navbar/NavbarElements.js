@@ -4,8 +4,7 @@ import { Link as LinkScroll} from 'react-scroll';
 
 export const Nav = styled.nav`
   background: transparent;
-  height: 100px;
-  /* margin-top: --80px;*/
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +13,9 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   border-radius: 0% 0% 20% 20%;
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  backdrop-filter: blur(2.5px);
+  box-shadow: 0px 5px 5px rgba(68, 68, 68, 0.6);
+  backdrop-filter: blur(2.0px);
+  
 
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
