@@ -9,14 +9,18 @@ Router {
   margin: 0;
   font-family: "Encode Sans Expanded", sans-serif;
   background-color: black;
-}.nav,
+}
+.nav,
 .back {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  margin: 0;
+  padding: 0;
 }
+
 .back {
   background-image: url("thor.png");
   background-position: center center;
