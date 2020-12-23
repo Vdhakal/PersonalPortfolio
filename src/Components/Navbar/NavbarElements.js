@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  
+  border-radius: 0% 0% 20% 20%;
   box-shadow:         5px 5px 5px rgba(68, 68, 68, 0.6);
 
   @media screen and (max-width: 960px){
@@ -47,7 +47,9 @@ export const NavLogo = styled(LinkR)`
   }
 `;
 export const MobileIcon = styled.div`
-  display: none;
+  display: none;  
+  background: transparent;
+
 
   @media screen and (max-width: 768px){
     display: block;
@@ -125,5 +127,3 @@ export const NavBtnLink = styled.nav`
     color: #010606;
   }
 `;
-
-
