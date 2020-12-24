@@ -108,23 +108,21 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled.nav`
-  border-radius: 50px;
-  width: 70px;
-  height: 20px;
-  background:#01bf71;
-  white-space: 10px 22px;
-  color: #010606;
-  font-size:1rem;
-  text-align: center;
-  outline: none;
-  border: none;
-  cursor: pointer;
+  padding:5px 20px;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  font-size: 1rem;
+  color:#FFFFFF;
+  text-align:center;
   transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
   &:hover{
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+      transition: all 0.2s ease-in-out;
+      color: #000000;
+      background-color:#FFFFFF;
   }
 `;
