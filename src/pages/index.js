@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import BackgroundSection from '../Components/Background';
+import Social from '../Components/Social/Social'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Navbar/Sidebar'
 
@@ -14,7 +15,9 @@ const Home = () => {
         <div>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            {/* <BackgroundSection /> */}
+            <BackgroundSection />  
+            <div class="back"/> 
+            <Social />
         </div>
     )
 }

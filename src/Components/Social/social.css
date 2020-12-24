@@ -1,16 +1,19 @@
 a {
   color: #fff;
   text-decoration: none;
+  z-index: 1200;
 }
 .me {
   width: 400px;
   margin: 90px auto;
+  z-index: 1200;
 }
 .me p,
 .me h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
+  z-index: 1200;
 }
 .me p {
   font-weight: 200;
@@ -29,6 +32,7 @@ a {
   -ms-transform: translate(-270px, 0);
   -o-transform: translate(-270px, 0);
   transform: translate(-270px, 0);
+  z-index: 1200;
 }
 .social ul li {
   display: block;
@@ -45,6 +49,7 @@ a {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+  z-index: 1200;
 }
 .social ul li:hover {
   -webkit-transform: translate(110px, 0);
@@ -53,9 +58,11 @@ a {
   -o-transform: translate(110px, 0);
   transform: translate(110px, 0);
   background: rgba(255, 255, 255, 0.4);
+  z-index: 1200;
 }
 .social ul li:hover a {
   color: #000;
+  z-index: 1200;
 }
 .social ul li:hover i {
   color: #fff;
@@ -70,6 +77,7 @@ a {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+  z-index: 1200;
 }
 .social ul li i {
   margin-left: 10px;
@@ -88,6 +96,7 @@ a {
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
+  z-index: 1200;
 }
 
 body {

@@ -7,9 +7,7 @@ const App=(() =>
     <>
         <Router>
             <Home />
-            <div class="back"/>
         </Router>
-        <Social />
 
     </>
     

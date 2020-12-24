@@ -6,11 +6,11 @@ const BackgroundSection = () => {
     return (
         <BackgroundContainer>
             <BackgroundBg>
-                {/* <VideoBg autoplay loop muted src={Video} type='video/mp4' />  */}
-           </BackgroundBg>
-               <h1 data-splitting>
+                <h1 data-splitting>
                    Vaskar Dhakal
                </h1>
+               </BackgroundBg>
+
         </BackgroundContainer>
     )
 }
