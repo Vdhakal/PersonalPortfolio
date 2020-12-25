@@ -16,7 +16,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <BackgroundSection />  
-            <div class="back"/> 
+            <div class="back" /> 
             <Social />
         </div>
     )
