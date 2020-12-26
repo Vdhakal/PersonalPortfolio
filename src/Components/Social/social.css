@@ -48,7 +48,7 @@ a {
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;
+  transition: all .2s;
   z-index: 1200;
 }
 .social ul li:hover {
@@ -76,7 +76,7 @@ a {
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;
+  transition: all .8s;
   z-index: 1200;
 }
 .social ul li i {
