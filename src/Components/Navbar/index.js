@@ -17,9 +17,7 @@ const Navbar = ({toggle}) => {
         <Nav>
             <NavbarContainer>
                 <NavLogo to='/'>VD</NavLogo>
-                
                 <MobileIcon onClick={toggle}><FaBars /></MobileIcon>
-                
                 <NavMenu>
                     <Navitem to ="about">About</Navitem>
                     <Navitem to ="projects">Projects</Navitem>
@@ -27,7 +25,6 @@ const Navbar = ({toggle}) => {
                     <Navitem to ="skills">Skills</Navitem>
                     <Navitem to ="skills">Contact</Navitem>
                 </NavMenu>
-
                 <NavBtn>
                     <NavBtnLink class = "button" to ="/resume">Resume</NavBtnLink>
                 </NavBtn>

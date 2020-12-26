@@ -1,16 +1,21 @@
 import styled from 'styled-components';
 
 export const BackgroundContainer = styled.div`
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 0 30px;
-    height: 800px;
-    position: relative;
-    z-index:1;
-    margin-left: 50px;
-    margin-top: 120px;
+    // background: transparent;
+    // display: flex;
+    // justify-content: center;
+    // align-items:center;
+    // padding: 0 30px;
+    // height: 800px;
+    // position: relative;
+    // z-index:1;
+    // margin-left: 50px;
+    // margin-top: 120px;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
 `
 // export const BackgroundBg = styled.div`
 //     position: absolute;

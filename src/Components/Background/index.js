@@ -1,11 +1,12 @@
 import React from 'react';
 import './backgroundtext.css';
+import './particles.css';
 import {BackgroundContainer, BackgroundBg, VideoBg, Content} from './BackgroundElements';
 import Particles from 'react-particles-js';
 
 const BackgroundSection = () => {
     return (
-        <>
+        <BackgroundContainer>
             <Particles params={{
                             "particles": {
                                 "number": {
@@ -115,24 +116,15 @@ const BackgroundSection = () => {
                             "retina_detect": true,
                             "config_demo": {
                                 "hide_card": false,
-                                "background_color": "#b61924",
+                                "background_color": "black",
                                 "background_image": "",
                                 "background_position": "50% 50%",
                                 "background_repeat": "no-repeat",
                                 "background_size": "cover"
                             }
                          }}/>
-            <BackgroundContainer>
             
-                <BackgroundBg>
-                
-                    {/* <h1 data-splitting>
-                    Vaskar Dhakal
-                </h1> */}
-                </BackgroundBg>
-
-            </BackgroundContainer>
-        </>
+        </BackgroundContainer>
     )
 }
 

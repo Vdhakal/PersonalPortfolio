@@ -32,7 +32,7 @@ a {
   -ms-transform: translate(-270px, 0);
   -o-transform: translate(-270px, 0);
   transform: translate(-270px, 0);
-  z-index: 1200;
+  z-index: 100;
 }
 .social ul li {
   display: block;
@@ -97,10 +97,4 @@ a {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
   z-index: 1200;
-}
-
-body {
-  background: #25343f;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
 }
