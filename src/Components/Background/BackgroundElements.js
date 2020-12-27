@@ -46,6 +46,13 @@ height:100%;
 top:50%;
 left:25%;
 color: white;
-z-index:2;	
-
+z-index:-1;	
+@media screen and (max-width: 480px) {
+    top:60%;
+    div span:last-of-type {
+        display: block;
+        left:20%;
+        color: #f00;
+    }
+  }
 `
