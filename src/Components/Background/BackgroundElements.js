@@ -16,6 +16,7 @@ export const BackgroundContainer = styled.div`
     height:100%;
     top:0px;
     left:0px;
+    margin: 0 auto;
 `
 // export const BackgroundBg = styled.div`
 //     position: absolute;
@@ -39,9 +40,12 @@ export const BackgroundBg = styled.div`
 `
 
 export const ContentH1 = styled.div`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: $232a34
+position:fixed;
+width:100%;
+height:100%;
+top:50%;
+left:25%;
+color: white;
+z-index:2;	
+
 `

@@ -1,7 +1,7 @@
 import React from 'react';
-import './backgroundtext.css';
-import './particles.css';
-import {BackgroundContainer, BackgroundBg, VideoBg, Content} from './BackgroundElements';
+import './backgroundtext.scss';
+import './particles.scss';
+import {BackgroundContainer, BackgroundBg, VideoBg, ContentH1} from './BackgroundElements';
 import Particles from 'react-particles-js';
 
 const BackgroundSection = () => {
@@ -10,7 +10,7 @@ const BackgroundSection = () => {
             <Particles params={{
                             "particles": {
                                 "number": {
-                                "value": 100,
+                                "value": 50,
                                 "density": {
                                     "enable": true,
                                     "value_area": 800
@@ -35,7 +35,7 @@ const BackgroundSection = () => {
                                 }
                                 },
                                 "opacity": {
-                                "value": 0.5,
+                                "value": 0.3,
                                 "random": false,
                                 "anim": {
                                     "enable": false,
@@ -123,8 +123,31 @@ const BackgroundSection = () => {
                                 "background_size": "cover"
                             }
                          }}/>
-            
+                         
+                         
+            {/* <h1>
+                <span>V</span>
+                <span>A</span>
+                <span>S</span>
+                <span>K</span>
+                <span>A</span>
+                <span>R</span>
+                <span> </span>
+                <span> D</span>
+                <span>H</span>
+                <span>A</span>
+                <span>K</span>
+                <span>A</span>
+                <span>L</span>
+                </h1> */}
+                <ContentH1>
+                <div class="glitch" data-text="Vaskar Dhakal">Vaskar Dhakal</div>
+                <div class="glow">Vaskar Dhakal</div>
+                <p class="subtitle">Engineer﹒Gamer﹒Shenaniganizer</p>
+                {/* <div class="scanlines"></div> */}
+                </ContentH1>
         </BackgroundContainer>
+        
     )
 }
 
