@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/PersonalPortfolio/static/css/main.a33d4e4d.chunk.css",
+    "main.js": "/PersonalPortfolio/static/js/main.a4be45b0.chunk.js",
+    "main.js.map": "/PersonalPortfolio/static/js/main.a4be45b0.chunk.js.map",
+    "runtime-main.js": "/PersonalPortfolio/static/js/runtime-main.7ce222e9.js",
+    "runtime-main.js.map": "/PersonalPortfolio/static/js/runtime-main.7ce222e9.js.map",
+    "static/js/2.5dcab196.chunk.js": "/PersonalPortfolio/static/js/2.5dcab196.chunk.js",
+    "static/js/2.5dcab196.chunk.js.map": "/PersonalPortfolio/static/js/2.5dcab196.chunk.js.map",
+    "static/js/3.121efab9.chunk.js": "/PersonalPortfolio/static/js/3.121efab9.chunk.js",
+    "static/js/3.121efab9.chunk.js.map": "/PersonalPortfolio/static/js/3.121efab9.chunk.js.map",
+    "index.html": "/PersonalPortfolio/index.html",
+    "static/css/main.a33d4e4d.chunk.css.map": "/PersonalPortfolio/static/css/main.a33d4e4d.chunk.css.map",
+    "static/js/2.5dcab196.chunk.js.LICENSE.txt": "/PersonalPortfolio/static/js/2.5dcab196.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/PersonalPortfolio/static/media/thor.cc0c8e8d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ce222e9.js",
+    "static/js/2.5dcab196.chunk.js",
+    "static/css/main.a33d4e4d.chunk.css",
+    "static/js/main.a4be45b0.chunk.js"
+  ]
+}
