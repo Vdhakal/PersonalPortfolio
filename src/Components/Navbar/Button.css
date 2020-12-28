@@ -1,4 +1,4 @@
-.button {
+/* .button {
   min-width: 300px;
   min-height: 60px;
   font-family: "Nunito", sans-serif;
@@ -81,3 +81,26 @@ button:focus::after {
     opacity: 0;
   }
 }
+ */
+
+
+
+
+ /* <>
+ <Nav>
+     <NavbarContainer>
+         <NavLogo to='/'>VD</NavLogo>
+         <MobileIcon onClick={toggle}><FaBars /></MobileIcon>
+         <NavMenu>
+             <Navitem to ="about">About</Navitem>
+             <Navitem to ="projects">Projects</Navitem>
+             <Navitem to ="work">Work</Navitem>
+             <Navitem to ="skills">Skills</Navitem>
+             <Navitem to ="skills">Contact</Navitem>
+         </NavMenu>
+         <NavBtn>
+             <NavBtnLink class = "button" to ="/resume">Resume</NavBtnLink>
+         </NavBtn>
+     </NavbarContainer>
+ </Nav>
+</> */
