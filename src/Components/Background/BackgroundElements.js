@@ -55,7 +55,7 @@ export const BackgroundBg = styled.div`
 
 export const ContentH1 = styled.div`
 position:absolute;
-width:100%;
+width:54%;
 height:20%;
 top:60%;
 left:25%;
@@ -64,5 +64,6 @@ z-index:-1;
 @media screen and (max-width: 960px) {
     top:70%;
     left:10%;
+    width:90%;
   }
 `
