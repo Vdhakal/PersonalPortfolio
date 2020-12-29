@@ -10,12 +10,12 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1.1rem;
   position: sticky;
+  width:100%;
   top: 0;
   z-index: 10;
   border-radius: 0% 0% 20% 20%;
   box-shadow: 0px 5px 5px rgba(68, 68, 68, 0.6);
   backdrop-filter: blur(2.0px);
-  
 
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
@@ -57,7 +57,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%,130%);
+    transform: translate(-100%,120%);
     cursor: pointer;
     color: white;
   }

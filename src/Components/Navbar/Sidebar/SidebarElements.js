@@ -4,7 +4,7 @@ import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkScroll} from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
-    position:fixed;
+    position:absolute;
     z-index:999;
     width:100%;
     height:100%;
@@ -26,6 +26,7 @@ export const Icon = styled.div`
     position:absolute;
     top:0;
     right:0;
+    transform: translate(-80%,50%);
     background: transparent;
     font-size: 2rem;
     cursor: pointer;
@@ -38,7 +39,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: repeat(6, 80px);
     text-align: center;
     padding-top: 50px;
 

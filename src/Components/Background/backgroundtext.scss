@@ -1,3 +1,8 @@
+.x {
+  color: red;
+  position: absolute;
+  top: auto;
+}
 .glitch {
   color: rgb(223, 191, 191);
   position: relative;
@@ -6,7 +11,7 @@
   animation: glitch 5s 5s infinite;
 
   @media screen and (max-width: 960px) {
-    font-size: 12vw;
+    font-size: 14vw;
   }
 }
 
@@ -113,6 +118,9 @@
   position: absolute;
   left: 17%;
   animation: glitch-2 5s 5.02s infinite;
+  @media screen and (max-width: 960px) {
+    font-size: 1.3vw;
+  }
 }
 
 @keyframes glitch-2 {

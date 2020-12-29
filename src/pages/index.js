@@ -4,6 +4,7 @@ import BackgroundSection from '../Components/Background';
 import Social from '../Components/Social/Social'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Navbar/Sidebar'
+import About from '../Components/About'
 
 const Home = () => {
     const[isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const Home = () => {
             <div class="back" /> 
             <BackgroundSection />  
             <Social />
+            <About />
         </div>
     )
 }

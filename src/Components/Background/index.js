@@ -6,8 +6,9 @@ import Particles from 'react-particles-js';
 
 const BackgroundSection = () => {
     return (
+        <>
         <BackgroundContainer>
-            <Particles params={{
+             <Particles params={{
                             "particles": {
                                 "number": {
                                 "value": 50,
@@ -122,8 +123,8 @@ const BackgroundSection = () => {
                                 "background_repeat": "no-repeat",
                                 "background_size": "cover"
                             }
-                         }}/>
-                         
+                         }}/> 
+                          
                          
             {/* <h1>
                 <span>V</span>
@@ -140,13 +141,17 @@ const BackgroundSection = () => {
                 <span>A</span>
                 <span>L</span>
                 </h1> */}
-                <ContentH1>
-                <div class="glitch" data-text="Vaskar Dhakal">Vaskar Dhakal</div>
-                <div class="glow">Vaskar Dhakal</div>
-                <p class="subtitle">Engineer﹒Gamer﹒Shenaniganizer</p>
-                {/* <div class="scanlines"></div> */}
-                </ContentH1>
+
         </BackgroundContainer>
+        
+
+            <ContentH1>
+            <div class="glitch" data-text="Vaskar Dhakal">Vaskar Dhakal</div>
+            <div class="glow">Vaskar Dhakal</div>
+            <p class="subtitle">Engineer﹒Gamer﹒Developer</p>
+            {/* {/* <div class="scanlines"></div> */}
+            </ContentH1>
+        </>
         
     )
 }
