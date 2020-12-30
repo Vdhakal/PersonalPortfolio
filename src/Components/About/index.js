@@ -6,7 +6,7 @@ const About = () => {
         <>
         <Filler /> 
         {/* <div class="next" />  */}
-        <section id="about">
+      <section id="about">
       <div className="row">
          <div className="three columns">
          </div>
