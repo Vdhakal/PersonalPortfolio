@@ -1,42 +1,90 @@
-import React from 'react'
-import '../../App.css'
-import {Filler} from './AboutElements';
-const About = () => {
+import React, { Component } from "react";
+import {Filler} from "./AboutElements.js";
+
+import FluidAnimation from "./react-fluid-animation";
+import random from "random";
+
+const defaultConfig = {
+  textureDownsample: 1,
+  densityDissipation: 0.98,
+  velocityDissipation: 0.99,
+  pressureDissipation: 0.8,
+  pressureIterations: 25,
+  curl: 30,
+  splatRadius: 0.005
+};
+
+export default class About extends Component {
+   
+  state = {
+    config: {
+      ...defaultConfig
+    }
+  };
+
+  componentDidMount() {
+    this._reset();
+  }
+
+  render() {
+    <Filler/>
+    const { config } = this.state;
+
     return (
-        <>
-        <Filler /> 
-        {/* <div class="next" />  */}
-        <section id="about">
-      <div className="row">
-         <div className="three columns">
-         </div>
-         <div className="nine columns main-col">
-            <h2>About Me</h2>
+      <div
+        style={{
+          height: "100vh"
+        }}
+      >
+        <FluidAnimation config={config} animationRef={this._animationRef} />
 
-            <p>sdweqew</p>
-            <div className="row">
-               <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-						   <span>sadsad</span><br />
-						   <span>wqwe<br />
-						         sdaasd sadsadsa,21321
-                   </span><br />
-						   <span>12312</span><br />
-                     <span>sadsadwsad</span>
-					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href='rweqre' className="button"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-            </div>
-         </div>
+        <div
+          style={{
+            position: "absolute",
+            zIndex: 1,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            padding: "1em",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#fff",
+            fontFamily: 'Quicksand, "Helvetica Neue", sans-serif',
+            pointerEvents: "none"
+          }}
+        >
+            <h1>Vaskar Dhakal</h1>
+        </div>
+
+        
+         
       </div>
+    );
+  }
 
-   </section>
-        </>
-    )
+  _animationRef = ref => {
+    this._animation = ref;
+    this._reset();
+  };
+
+  _onUpdate = config => {
+    this.setState({ config });
+  };
+
+  _onClickRandomSplats = () => {
+    this._animation.addSplats((5 + Math.random() * 20) | 0);
+  };
+
+  _onReset = () => {
+    this.setState({ config: { ...defaultConfig } });
+  };
+
+  _reset() {
+    if (this._animation) {
+      this._animation.addRandomSplats(random.int(100, 180));
+    }
+  }
 }
-export default About;

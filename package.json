@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^12.6.0",
     "node-sass": "^4.14.1",
     "particles.js": "^2.0.0",
+    "random": "^2.2.0",
     "react": "^17.0.1",
+    "react-dat-gui": "^1.0.2",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-particles-js": "^3.4.1",
@@ -16,7 +18,11 @@
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "prop-types": "^15.6.2",
+    "raf": "latest",
+    "react-github-corner": "^2.3.0",
+    "react-sizeme": "2.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

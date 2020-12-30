@@ -6,6 +6,9 @@ html {
   margin-right: 0px;
   margin-left: 0px;
 }
+html{
+  background-color:black;
+}
 Router {
   box-sizing: border-box;
   padding: 0;
