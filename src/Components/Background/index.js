@@ -1,13 +1,39 @@
 import React from 'react';
 import './backgroundtext.scss';
 import './particles.scss';
-import {BackgroundContainer, BackgroundBg, VideoBg, ContentH1} from './BackgroundElements';
+import {BackgroundContainer, BackGroundImg, ContentH1} from './BackgroundElements';
 import Particles from 'react-particles-js';
+import $ from "jquery";
+
+
+$(window).scroll(function() {
+    var $maxScroll=1000;
+    var $maxScale=1;
+    var $x=$(window).scrollTop()/400+1;
+    var height = $(window).height();
+    if($(window).scrollTop()>$maxScroll) $x=$maxScale;
+//    $('#first .background').css({transform: 'scale('+$x+','+$x+')'});
+    $('.dgKINQ').css({
+        transform: 'scale('+$x+','+$x+')',
+        'opacity': ((height - ($(window).scrollTop()*1.5)) / height)
+    });
+
+    $('.bULZRM').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
+    $('#tsparticles').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
+    //   $("#tsparticles").css({
+    //     backgroundSize: (100 + scroll/5)  + "%",
+    //     top: -(scroll/10)  + "%",
+    // });
+    // $(".bULZRM").css({
+    //     top: -(scroll/10)  + "%",
+    // });
+  });
 
 const BackgroundSection = () => {
     return (
         <>
         <BackgroundContainer>
+            <BackGroundImg/>
              <Particles params={{
                             "particles": {
                                 "number": {
@@ -124,23 +150,6 @@ const BackgroundSection = () => {
                                 "background_size": "cover"
                             }
                          }}/> 
-                          
-                         
-            {/* <h1>
-                <span>V</span>
-                <span>A</span>
-                <span>S</span>
-                <span>K</span>
-                <span>A</span>
-                <span>R</span>
-                <span> </span>
-                <span> D</span>
-                <span>H</span>
-                <span>A</span>
-                <span>K</span>
-                <span>A</span>
-                <span>L</span>
-                </h1> */}
 
         </BackgroundContainer>
         
@@ -149,7 +158,6 @@ const BackgroundSection = () => {
             <div class="glitch" data-text="Vaskar Dhakal">Vaskar Dhakal</div>
             <div class="glow">Vaskar Dhakal</div>
             <p class="subtitle">Engineer﹒Gamer﹒Developer</p>
-            {/* {/* <div class="scanlines"></div> */}
             </ContentH1>
         </>
         

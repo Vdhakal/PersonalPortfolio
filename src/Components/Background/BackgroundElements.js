@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {backImage} from '../../flower.jpg'
+import backImage from '../../thor.png'
 
 export const BackgroundContainer = styled.div`
 position: absolute;
@@ -9,6 +9,23 @@ top: 0;
 left: 0;
 margin: 0;
 padding: 0;
+`
+export const BackGroundImg =styled.div`
+position: absolute;
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+margin: 0;
+padding: 0;
+z-index:-10;
+background-image: url(${backImage});
+background-position: bottom center;
+background-repeat: no-repeat;
+background-attachment: ablsolute;
+background-size: cover;
+background-color: #000000;
+
 `
 // export const BackgroundBg = styled.div`
 //     position: absolute;
@@ -45,17 +62,7 @@ padding: 0;
     // background-size: cover;
     // background-color: #000000;
 // `
-export const BackgroundBg = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position:absolute;
-    padding: 8px 24px;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    z-index:1;
-    
-`
+
 
 export const ContentH1 = styled.div`
 position:absolute;

@@ -7,7 +7,7 @@ const About = () => {
         <Filler /> 
         {/* <div class="next" />  */}
       <section id="about">
-      <div className="row">
+      <div className="row" style={{marginBottom: "1000px"}}>
          <div className="three columns">
          </div>
          <div className="nine columns main-col">

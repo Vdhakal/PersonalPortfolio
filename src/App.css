@@ -8,6 +8,7 @@ html {
 }
 html {
   background-color: black;
+  overflow-x: hidden;
 }
 Router {
   box-sizing: border-box;
@@ -16,7 +17,7 @@ Router {
   font-family: "Encode Sans Expanded", sans-serif;
   background-color: black;
 }
-.back {
+.zoom {
   position: absolute;
   width: 100%;
   height: 100vh;

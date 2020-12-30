@@ -17,7 +17,6 @@ const Home = () => {
         <div>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            <div class="back" /> 
             <BackgroundSection />  
             <Social />
             <About />
