@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.a33d4e4d.chunk.css",
-    "main.js": "/PersonalPortfolio/static/js/main.a4be45b0.chunk.js",
-    "main.js.map": "/PersonalPortfolio/static/js/main.a4be45b0.chunk.js.map",
-    "runtime-main.js": "/PersonalPortfolio/static/js/runtime-main.7ce222e9.js",
-    "runtime-main.js.map": "/PersonalPortfolio/static/js/runtime-main.7ce222e9.js.map",
-    "static/js/2.5dcab196.chunk.js": "/PersonalPortfolio/static/js/2.5dcab196.chunk.js",
-    "static/js/2.5dcab196.chunk.js.map": "/PersonalPortfolio/static/js/2.5dcab196.chunk.js.map",
-    "static/js/3.121efab9.chunk.js": "/PersonalPortfolio/static/js/3.121efab9.chunk.js",
-    "static/js/3.121efab9.chunk.js.map": "/PersonalPortfolio/static/js/3.121efab9.chunk.js.map",
-    "index.html": "/PersonalPortfolio/index.html",
-    "static/css/main.a33d4e4d.chunk.css.map": "/PersonalPortfolio/static/css/main.a33d4e4d.chunk.css.map",
-    "static/js/2.5dcab196.chunk.js.LICENSE.txt": "/PersonalPortfolio/static/js/2.5dcab196.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/PersonalPortfolio/static/media/thor.cc0c8e8d.png"
+    "main.css": "/portfolio/static/css/main.1132ec2d.chunk.css",
+    "main.js": "/portfolio/static/js/main.2f297b47.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2f297b47.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.12149edc.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.12149edc.js.map",
+    "static/js/2.14f1ef6f.chunk.js": "/portfolio/static/js/2.14f1ef6f.chunk.js",
+    "static/js/2.14f1ef6f.chunk.js.map": "/portfolio/static/js/2.14f1ef6f.chunk.js.map",
+    "static/js/3.e5806d94.chunk.js": "/portfolio/static/js/3.e5806d94.chunk.js",
+    "static/js/3.e5806d94.chunk.js.map": "/portfolio/static/js/3.e5806d94.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.1132ec2d.chunk.css.map": "/portfolio/static/css/main.1132ec2d.chunk.css.map",
+    "static/js/2.14f1ef6f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.14f1ef6f.chunk.js.LICENSE.txt",
+    "static/media/css.5bd8c816.png": "/portfolio/static/media/css.5bd8c816.png",
+    "static/media/App.css": "/portfolio/static/media/flower.4cb8b2da.jpg",
+    "static/media/thor.cc0c8e8d.png": "/portfolio/static/media/thor.cc0c8e8d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ce222e9.js",
-    "static/js/2.5dcab196.chunk.js",
-    "static/css/main.a33d4e4d.chunk.css",
-    "static/js/main.a4be45b0.chunk.js"
+    "static/js/runtime-main.12149edc.js",
+    "static/js/2.14f1ef6f.chunk.js",
+    "static/css/main.1132ec2d.chunk.css",
+    "static/js/main.2f297b47.chunk.js"
   ]
 }
