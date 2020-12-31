@@ -1,0 +1,65 @@
+ 
+   .aboutTitle {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    /* letter-spacing: -3px; */
+
+    position: relative;
+    left: 12%;
+  }
+  
+ 
+#text{
+    position: relative;
+    left:21%;
+    top:5%;
+}
+
+p{
+    width: 70%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.char{
+    font-size: 40px;
+    height: 40px;
+    animation: an 3s ease-out 3 both;
+    display: inline-block;
+}
+
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+.mylink{
+position: absolute;
+z-index: 150;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: right;
+padding: .6rem;
+}
+
+.mylink a{
+font-family: Sans;
+color: #fff;
+border-bottom: 1px solid #fff;
+opacity: .5;
+transition: opacity .3s;
+text-decoration: none
+}
+.mylink a:hover{
+opacity: 1
+}

@@ -1,41 +1,52 @@
-import React from 'react'
-import '../../App.css'
+import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom'
+import '../../App.css';
 import {Filler} from './AboutElements';
+import './about.css';
+
+
 const About = () => {
+
+
+    useEffect(() => {
+        var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 6;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+         
+    }, []);
+
+    
+    
     return (
         <>
-        <Filler /> 
-        {/* <div class="next" />  */}
-      <section id="about">
-      <div className="row" style={{marginBottom: "1000px"}}>
-         <div className="three columns">
-         </div>
-         <div className="nine columns main-col">
-            <h2>About Me</h2>
-
-            <p>sdweqew</p>
-            <div className="row">
-               <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-						   <span>sadsad</span><br />
-						   <span>wqwe<br />
-						         sdaasd sadsadsa,21321
-                   </span><br />
-						   <span>12312</span><br />
-                     <span>sadsadwsad</span>
-					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href='rweqre' className="button"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-
-   </section>
+            <Filler /> 
+            {/* <div class="next" />  */}
+            <section id="about">
+                <div className="center">
+                    
+                <h1 className='aboutTitle'>
+                            ABOUT ME
+                        </h1> 
+                    <p id="text">
+                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt praesentium, rerum voluptatem in reiciendis officia harum repudiandae tempore suscipit ex ea,
+                            adipisci ab porro.
+                        </p>
+                    </p>
+                </div>
+            </section>
         </>
     )
 }

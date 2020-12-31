@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Filler = styled.div`
 color:red;
 background:transparent;
-height:200vh;
+height:150vh;
 background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
