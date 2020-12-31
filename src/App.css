@@ -9,6 +9,12 @@ html {
 html {
   background-color: black;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 Router {
   box-sizing: border-box;

@@ -10,3 +10,10 @@ background-attachment: fixed;
 background-size: cover;
 z-index:-100;
 `
+export const AboutSection = styled.div`
+color:white;
+font-size:5rem;
+padding: 500px 0 500px 0;
+border:solid;
+text-align: center;
+`
