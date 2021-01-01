@@ -32,13 +32,6 @@ const About = () => {
     
     return (
         <>
-<<<<<<< HEAD
-        <Filler /> 
-        {/* <div class="next" />  */}
-    <AboutSection>
-       Fuck About
-    </AboutSection>
-=======
             <Filler /> 
             {/* <div class="next" />  */}
             <section id="about">
@@ -54,7 +47,6 @@ const About = () => {
                     </p>
                 </div>
             </section>
->>>>>>> 63476d025b7564fdd451cba70181d56b502a8bdb
         </>
     )
 }
