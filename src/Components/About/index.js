@@ -1,35 +1,45 @@
-<<<<<<< HEAD
-import React from 'react'
-import '../../App.css'
-import {AboutSection, Filler} from './AboutElements';
-=======
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom'
 import '../../App.css';
 import {Filler} from './AboutElements';
 import './about.css';
 
->>>>>>> 63476d025b7564fdd451cba70181d56b502a8bdb
 
 const About = () => {
 
 
+    const aboutMeData = {
+        aboutMeTitle: 'About Me',
+        line1: "I'm an allrounder MotherFucker in Programming",
+        line2: "You Know What I mean, Dont't You?",
+        line3: "Stupid Ass piece of shit!!!",
+        line4: "I'm cool tho' :D",
+        line5: '<---------->'
+    }
+
     useEffect(() => {
-        var text = document.getElementById('text');
-        var newDom = '';
-        var animationDelay = 6;
+      
+        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('resize', handleWindowResize);
 
-        for(let i = 0; i < text.innerText.length; i++)
-        {
-            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        const spansSlow = document.querySelectorAll('.spanSlow');
+        const spansFast = document.querySelectorAll('.spanFast');
+
+        let width = window.innerWidth;
+
+        function handleMouseMove(e) {
+        let normalizedPosition = e.pageX / (width/2) - 1;
+        let speedSlow = 100 * normalizedPosition;
+        let speedFast = 200 * normalizedPosition;
+        spansSlow.forEach((span) => {
+            span.style.transform = `translate(${speedSlow}px)`;
+        });
+        spansFast.forEach((span) => {
+            span.style.transform = `translate(${speedFast}px)`
+        })
         }
-
-        text.innerHTML = newDom;
-        var length = text.children.length;
-
-        for(let i = 0; i < length; i++)
-        {
-            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        //we need to recalculate width when the window is resized
+        function handleWindowResize() {
+        width = window.innerWidth;
         }
          
     }, []);
@@ -39,20 +49,89 @@ const About = () => {
     return (
         <>
             <Filler /> 
-            {/* <div class="next" />  */}
-            <section id="about">
-                <div className="center">
-                    
-                <h1 className='aboutTitle'>
-                            ABOUT ME
-                        </h1> 
-                    <p id="text">
-                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt praesentium, rerum voluptatem in reiciendis officia harum repudiandae tempore suscipit ex ea,
-                            adipisci ab porro.
-                        </p>
-                    </p>
+            <div class="wrap">
+                    <div class="line">
+                        <div class="left">
+                            <div class="content">
+                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData.aboutMeTitle}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="right">
+                            <div class="content">
+                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData.aboutMeTitle}</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <br/><br/><br/>
+
+
+
+
+            <div class="wrap">
+                <div class="line">
+                    <div class="left">
+                        <div class="content">
+                        <span class="spanSlow">{aboutMeData.line1}</span>
+                    </div>
                 </div>
-            </section>
+                
+                <div class="right">
+                    <div class="content">
+                        <span class="spanSlow">{aboutMeData.line1}  </span>
+                    </div>
+                </div>
+                </div>
+                <div class="line">
+                    <div class="left">
+                        <div class="content">
+                                <span class="spanSlow">{aboutMeData.line2}</span>
+                        </div>
+                </div>
+                
+                <div class="right">
+                    <div class="content">
+                        <span class="spanSlow">{aboutMeData.line2}</span>
+                    </div>
+                </div>
+                </div>
+                <div class="line">
+                    <div class="left">
+                        <div class="content">
+                        <span class="spanFast">{aboutMeData.line3}</span>
+                        </div>
+                    </div><div class="right">
+                        <div class="content">
+                        <span class="spanFast">{aboutMeData.line3}</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="line">
+                        <div class="left">
+                        <div class="content">
+                            <span class="spanSlow">{aboutMeData.line4}</span>
+                        </div>
+                        </div><div class="right">
+                        <div class="content">
+                            <span class="spanSlow">{aboutMeData.line4}</span>
+                        </div>
+                        </div>
+                    </div>  
+                    <div class="line">
+                        <div class="left">
+                        <div class="content">
+                            <span class="spanSlow">{aboutMeData.line5}</span>
+                        </div>
+                        </div><div class="right">
+                        <div class="content">
+                            <span class="spanSlow">{aboutMeData.line5}</span>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+             <Filler style={{ 'height':'50vh'}}/>
         </>
     )
 }
