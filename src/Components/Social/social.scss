@@ -24,6 +24,7 @@ a {
 .social {
   position: fixed;
   top: 55%;
+  width: 40px;
   z-index: 10000;
   @media screen and (max-width: 960px) {
     top: 15%;

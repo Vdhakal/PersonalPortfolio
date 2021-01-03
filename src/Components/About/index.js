@@ -1,12 +1,29 @@
 import React, { useEffect } from 'react';
-import '../../App.css';
 import {Filler} from './AboutElements';
 import './about.css';
-
+import $ from 'jquery';
 
 const About = () => {
 
-
+    $(window).on("load",function() {
+        var $x=$(window).scrollTop()/400+1;
+        $(window).scroll(function() {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          $(".linewrap").each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+              if ($(this).css("opacity")==0) {$(this).fadeTo(900,1);
+            }
+            } else { //object goes out of view (scrolling up)
+              if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+            }
+          });
+        }).scroll(); //invoke scroll-handler on page-load
+      });
+    
     const aboutMeData = {
         aboutMeTitle: 'About Me',
         line1: "I'm an allrounder MotherFucker in Programming",
@@ -49,7 +66,7 @@ const About = () => {
     return (
         <>
             <Filler /> 
-            <div class="wrap">
+            <div class="linewrap">
                     <div class="line">
                         <div class="left">
                             <div class="content">
@@ -70,7 +87,7 @@ const About = () => {
 
 
 
-            <div class="wrap">
+            <div class="linewrap">
                 <div class="line">
                     <div class="left">
                         <div class="content">

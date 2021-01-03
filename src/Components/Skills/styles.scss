@@ -14,15 +14,20 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 1.3fr 1.3fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .skillscontainer {
   width: 150px;
   height: 150px;
-  margin: 15px;
+  margin: 10px;
   transform-style: flat;
+  @media screen and (max-width: 960px) {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
 }
 
 .skillscontainer > div {
@@ -36,4 +41,9 @@
   overflow: hidden;
   will-change: transform;
   cursor: pointer;
+  @media screen and (max-width: 960px) {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
 }
