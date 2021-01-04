@@ -9,11 +9,11 @@
     display: inline-block;
   }
   .left {
-    color:rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     transform: skew(0deg, -15deg);
   }
   .right {
-    color: rgb(255, 255, 255);
+    color:rgb(68, 68, 68);
     transform: skew(0deg, 15deg);
   }
   .left .content {
