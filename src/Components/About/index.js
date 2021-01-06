@@ -1,20 +1,39 @@
 import React, { useEffect } from 'react';
-import '../../App.css';
 import {Filler} from './AboutElements';
 import './about.css';
-
+import $ from 'jquery';
 
 const About = () => {
 
-
-    const aboutMeData = {
-        aboutMeTitle: 'About Me',
-        line1: "I'm an allrounder MotherFucker in Programming",
-        line2: "You Know What I mean, Dont't You?",
-        line3: "Stupid Ass piece of shit!!!",
-        line4: "I'm cool tho' :D",
-        line5: '<---------->'
-    }
+    $(window).on("load",function() {
+        var $x=$(window).scrollTop()/400+1;
+        $(window).scroll(function() {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          $(".linewrap").each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+              if ($(this).css("opacity")==0) {$(this).fadeTo(900,1);
+            }
+            } else { //object goes out of view (scrolling up)
+              if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+            }
+          });
+        }).scroll(); //invoke scroll-handler on page-load
+      });
+    
+    const aboutMeData = [
+        {aboutMeTitle: 'About Me'},
+        {data: "I'm an allrounder MotherFucker in Programming"},
+        {data: "You Know What I mean, Dont't You?"},
+        {data: "Stupid Ass piece of shit!!!"},
+        {data: "I'm cool tho' :D"},
+        {data: '<---------->'}
+    ]
+        
+    
 
     useEffect(() => {
       
@@ -49,87 +68,42 @@ const About = () => {
     return (
         <>
             <Filler /> 
-            <div class="wrap">
+            <div class="linewrap">
                     <div class="line">
                         <div class="left">
                             <div class="content">
-                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData.aboutMeTitle}</span>
+                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData[0].aboutMeTitle}</span>
                             </div>
                         </div>
                         
                         <div class="right">
                             <div class="content">
-                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData.aboutMeTitle}</span>
+                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData[0].aboutMeTitle}</span>
                             </div>
                         </div>
                     </div>
             </div>
 
             <br/><br/><br/>
+            
+            <div class="linewrap">
 
-
-
-
-            <div class="wrap">
-                <div class="line">
-                    <div class="left">
-                        <div class="content">
-                        <span class="spanSlow">{aboutMeData.line1}</span>
-                    </div>
-                </div>
-                
-                <div class="right">
-                    <div class="content">
-                        <span class="spanSlow">{aboutMeData.line1}  </span>
-                    </div>
-                </div>
-                </div>
-                <div class="line">
-                    <div class="left">
-                        <div class="content">
-                                <span class="spanSlow">{aboutMeData.line2}</span>
-                        </div>
-                </div>
-                
-                <div class="right">
-                    <div class="content">
-                        <span class="spanSlow">{aboutMeData.line2}</span>
-                    </div>
-                </div>
-                </div>
-                <div class="line">
-                    <div class="left">
-                        <div class="content">
-                        <span class="spanFast">{aboutMeData.line3}</span>
-                        </div>
-                    </div><div class="right">
-                        <div class="content">
-                        <span class="spanFast">{aboutMeData.line3}</span>
-                        </div>
-                    </div>
-                    </div>
+                {aboutMeData.map((line) => (
                     <div class="line">
-                        <div class="left">
+                    <div class="left">
                         <div class="content">
-                            <span class="spanSlow">{aboutMeData.line4}</span>
-                        </div>
-                        </div><div class="right">
-                        <div class="content">
-                            <span class="spanSlow">{aboutMeData.line4}</span>
-                        </div>
-                        </div>
-                    </div>  
-                    <div class="line">
-                        <div class="left">
-                        <div class="content">
-                            <span class="spanSlow">{aboutMeData.line5}</span>
-                        </div>
-                        </div><div class="right">
-                        <div class="content">
-                            <span class="spanSlow">{aboutMeData.line5}</span>
-                        </div>
+                            <span class="spanSlow">{line.data}</span>
                         </div>
                     </div>
+                
+                    <div class="right">
+                        <div class="content">
+                            <span class="spanSlow">{line.data}  </span>
+                        </div>
+                    </div>
+                </div>
+                ))
+                }
             </div>
              <Filler style={{ 'height':'50vh'}}/>
         </>

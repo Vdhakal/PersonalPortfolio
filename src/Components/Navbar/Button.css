@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
+
 .button {
   min-width: 300px;
   min-height: 60px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Goldman', cursive;
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1.3px;

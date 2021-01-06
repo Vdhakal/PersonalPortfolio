@@ -45,6 +45,9 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;  
   background: transparent;
+  font-family: 'Goldman', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
+
   }
 `;
 export const MobileIcon = styled.div`
@@ -81,6 +84,9 @@ export const Navitem = styled.li`
   color: white;
   margin-right: 22px;
   background: transparent;
+  font-family: 'Goldman', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
+
 `;
 
 export const NavLinks = styled(LinkScroll)`
@@ -114,7 +120,8 @@ export const NavBtnLink = styled.nav`
   border-radius:0.12em;
   box-sizing: border-box;
   text-decoration:none;
-  font-family:'Roboto',sans-serif;
+  font-family: 'Goldman', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
   font-weight:300;
   font-size: 1rem;
   color:#FFFFFF;
