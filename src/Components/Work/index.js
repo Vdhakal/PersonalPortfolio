@@ -1,9 +1,29 @@
 import React from 'react'
+import './styles.scss'
 import {WorkContatiner} from './Workelements.js';
+import {gsap} from 'gsap';
+
+document.body.addEventListener("mousemove", evt => {
+  const mouseX = evt.clientX;
+  const mouseY = evt.clientY;
+  
+  gsap.set(".cursor", {
+    x: mouseX,
+    y: mouseY
+  })
+  
+  gsap.to(".shape", {
+    x: mouseX,
+    y: mouseY,
+    stagger: -0.1
+  })
+})
+
 const Work = () => {
     return (
         <WorkContatiner>
-            Fuck Work
+            <canvas id="canvas"></canvas>
+            <div className="h1">Secret</div>
         </WorkContatiner>
     )
 }

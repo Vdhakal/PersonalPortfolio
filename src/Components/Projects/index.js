@@ -6,8 +6,6 @@ import './styles.scss';
 
 function Project() {
 
-
-
     function Hero({ children }) {
         return (
           <div className="hero">
@@ -21,7 +19,6 @@ function Project() {
         <Hero>
               <div className="container">
                 
-              <body>
             <div class="wrapper">
 
             <div class="container" id="c0">
@@ -73,14 +70,12 @@ function Project() {
         </div>
             
 
-        </body>
-
 
               </div>
         </Hero>
         
-        
-        {/* <Hero>
+{/*         
+        <Hero>
           <div className="container">
             <div className="row">
 
