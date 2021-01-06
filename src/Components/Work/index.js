@@ -22,8 +22,15 @@ document.body.addEventListener("mousemove", evt => {
 const Work = () => {
     return (
         <WorkContatiner>
-            <canvas id="canvas"></canvas>
-            <div className="h1">Secret</div>
+          <div class="cursor"></div>
+          <div class="shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+          </div>
+          <div class="Workcontent">
+          <div class="h1">Hello there!</div>
+          </div>
         </WorkContatiner>
     )
 }
