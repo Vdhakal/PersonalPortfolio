@@ -6,8 +6,6 @@ import './styles.scss';
 
 function Project() {
 
-
-
     function Hero({ children }) {
         return (
           <div className="hero">

@@ -1,13 +1,76 @@
-#canvas {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+// Import foundation.scss from vendor files
+@import "abzlqoq.scss";
+// Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
+
+.shapes {
+  position: absolute;
   top: 0;
-  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
 }
+
+.shape {
+  will-change: transform;
+  position: absolute;
+  border-radius: 50%;
+
+  $shapes: (
+    #005ffe: 650px,
+    #ffe5e3: 440px,
+    #ffcc57: 270px,
+  );
+
+  @each $color, $size in $shapes {
+    &.shape-#{index($shapes, ($color $size))} {
+      background: $color;
+      width: $size;
+      height: $size;
+      margin: (-$size/2) 0 0 (-$size/2);
+    }
+  }
+}
+
+.Workcontent {
+  top: 0vh;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  mix-blend-mode: multiply;
+}
+
 .h1 {
-  color: var(--bg);
-  position: relative;
+  @include rf(100, 200); // defined in imported pen;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+
+  mix-blend-mode: screen;
+  color: rgb(255, 255, 255);
   margin: 0;
+  text-align: center;
+}
+
+.cursor {
+  position: fixed;
+  background: #2128bd;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  will-change: transform;
+  user-select: none;
   pointer-events: none;
+  z-index: 10000;
+}
+
+::selection {
+  color: #fff;
+  background: #2128bd;
 }
