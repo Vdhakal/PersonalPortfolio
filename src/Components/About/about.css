@@ -25,6 +25,10 @@
     text-align: center;
     transform: translate(-50vw);
   }
+  #about{
+      position: relative;
+      padding-top: 35vh;
+  }
   span {
     display: inline-block;
     /* font-family: 'Courier', sans; */
