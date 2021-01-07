@@ -51,7 +51,7 @@ const About = () => {
     return (
         <>
             <Filler /> 
-            <div class="linewrap">
+            <div id = 'about' class="linewrap">
                     <div class="line">
                         <div class="left">
                             <div class="content">

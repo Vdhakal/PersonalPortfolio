@@ -5,7 +5,7 @@ import './styles.scss';
 
 function Project() {
   return (
-    <div className="main">
+    <div id = 'project' className="main">
         <Hero>
           <div className="container">
             <Info />

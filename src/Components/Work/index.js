@@ -21,7 +21,7 @@ document.body.addEventListener("mousemove", evt => {
 
 const Work = () => {
     return (
-        <WorkContatiner>
+        <WorkContatiner id="work">
           <div class="cursor"></div>
           <div class="shapes">
               <div class="shape shape-1"></div>

@@ -17,7 +17,7 @@ function sendEmail(e){
 }
 const Contact = () => {
     return (
-        <ContactContainer>
+        <ContactContainer id="contact">
            
             <div class="contact-section">
 

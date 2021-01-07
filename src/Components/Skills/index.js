@@ -33,7 +33,7 @@ function Stack({ image, background }) {
 
 const Skills = () => {
     return (
-        <><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div id="skill"><br/><br/><br/><br/><br/><br/><br/><br/>
         <h1 id="Skills_title">SKILLS</h1>
         <div class="skillsWrapper">
             
@@ -65,7 +65,7 @@ const Skills = () => {
             <Stack image="https://www.brandeps.com/icon-download/P/Python-icon-vector-04.svg" background="#ee7074" />
             </div>
         </div>
-        </>
+        </div>
     )
 }
 
