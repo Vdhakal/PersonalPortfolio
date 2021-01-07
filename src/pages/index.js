@@ -27,7 +27,7 @@ const Home = () => {
             <Social />
             <About />
             <Project />
-            {/* <Work /> */}
+            <Work />
             <Skills />
             <Contact/>
         </div>

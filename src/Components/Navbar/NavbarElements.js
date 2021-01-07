@@ -85,6 +85,7 @@ export const Navitem = styled.li`
   margin-right: 22px;
   background: transparent;
   font-family: 'Goldman', cursive;
+  cursor: pointer;
   src: url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
 
 `;
