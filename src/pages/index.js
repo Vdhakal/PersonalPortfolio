@@ -8,6 +8,8 @@ import About from '../Components/About'
 import Project from '../Components/Projects'
 import Work from '../Components/Work'
 import Skills from '../Components/Skills'
+import Contact from '../Components/Contacts'
+
 
 
 const Home = () => {
@@ -27,6 +29,7 @@ const Home = () => {
             <Project />
             {/* <Work /> */}
             <Skills />
+            <Contact/>
         </div>
     )
 }
