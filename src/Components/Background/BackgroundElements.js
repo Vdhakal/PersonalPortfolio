@@ -10,7 +10,9 @@ left: 0;
 margin: 0;
 padding: 0;
 `
-export const BackGroundImg =styled.div`
+export const BackGroundImg =styled.div.attrs(props => ({
+  class: props.class,
+}))`
 position: absolute;
 width: 100%;
 height: 100vh;

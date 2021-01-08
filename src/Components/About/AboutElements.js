@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Filler = styled.div`
     color:red;
     background:transparent;
-    height:150vh;
+    height:280vh;
+    position:relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,9 +12,9 @@ export const Filler = styled.div`
     z-index:-100;
 `
 export const AboutSection = styled.div`
+position: absolute;
+top:180vh;
 color:white;
 font-size:5rem;
-padding: 500px 0 500px 0;
-border:solid;
 text-align: center;
 `

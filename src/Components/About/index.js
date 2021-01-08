@@ -1,94 +1,44 @@
-import React, { useEffect } from 'react';
-import {Filler} from './AboutElements';
-import './about.css';
-import $ from 'jquery';
+import React from 'react'
+import './aboutStyles.scss'
+import {AboutSection, Filler} from './AboutElements.js';
+import {gsap} from 'gsap';
+
+document.body.addEventListener("mousemove", evt => {
+  const mouseX = evt.clientX;
+  const mouseY = evt.clientY;
+  
+  gsap.set(".cursor", {
+    x: mouseX,
+    y: mouseY
+  })
+  
+  gsap.to(".shape", {
+    x: mouseX,
+    y: mouseY,
+    stagger: -0.1
+  })
+})
 
 const About = () => {
-
-  
-    
-    const aboutMeData = [
-        {aboutMeTitle: 'About Me'},
-        {data: "I'm an allrounder MotherFucker in Programming"},
-        {data: "You Know What I mean, Dont't You?"},
-        {data: "Stupid Ass piece of shit!!!"},
-        {data: "I'm cool tho' :D"},
-        {data: '<---------->'}
-    ]
-        
-    
-
-    useEffect(() => {
-      
-        window.addEventListener('mousemove', handleMouseMove);
-        window.addEventListener('resize', handleWindowResize);
-
-        const spansSlow = document.querySelectorAll('.spanSlow');
-        const spansFast = document.querySelectorAll('.spanFast');
-
-        let width = window.innerWidth;
-
-        function handleMouseMove(e) {
-        let normalizedPosition = e.pageX / (width/2) - 1;
-        let speedSlow = 100 * normalizedPosition;
-        let speedFast = 200 * normalizedPosition;
-        spansSlow.forEach((span) => {
-            span.style.transform = `translate(${speedSlow}px)`;
-        });
-        spansFast.forEach((span) => {
-            span.style.transform = `translate(${speedFast}px)`
-        })
-        }
-        //we need to recalculate width when the window is resized
-        function handleWindowResize() {
-        width = window.innerWidth;
-        }
-         
-    }, []);
-
-    
-    
     return (
         <>
-            <Filler /> 
-            <div id = 'about' class="linewrap">
-                    <div class="line">
-                        <div class="left">
-                            <div class="content">
-                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData[0].aboutMeTitle}</span>
-                            </div>
-                        </div>
-                        
-                        <div class="right">
-                            <div class="content">
-                            <span class="spanSlow" id='aboutMeTitle'>{aboutMeData[0].aboutMeTitle}</span>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-
-            <br/><br/><br/>
-            
-            <div class="linewrap">
-
-                {aboutMeData.map((line) => (
-                    <div class="line">
-                    <div class="left">
-                        <div class="content">
-                            <span class="spanSlow">{line.data}</span>
-                        </div>
-                    </div>
-                
-                    <div class="right">
-                        <div class="content">
-                            <span class="spanSlow">{line.data}  </span>
-                        </div>
-                    </div>
-                </div>
-                ))
-                }
-            </div>
-             <Filler style={{ 'height':'50vh'}}/>
+        
+        <Filler />
+        <AboutSection id="about">
+        <br/><br/><br/><br/>
+          <div class="cursor"></div>
+          <div class="shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+          </div>
+          <div class="Aboutcontent">
+          <div class="h1">Hello There!<br/><br/>I'm a software developer with over 4 years of experience in designing and programming UI and web. I’m also a game developer. I hold a Bachelors degree in Computer Science with a minor in Mathematics. I live in lovely Monroe, LA. I’m currently open to job position related, but not limited, to software, web and game development.</div>
+          
+          </div>
+          
+        <br/><br/><br/><br/><br/><br/>
+        </AboutSection>
         </>
     )
 }

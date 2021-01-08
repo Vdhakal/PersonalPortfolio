@@ -16,8 +16,7 @@ export const Nav = styled.nav`
   border-radius: 0% 0% 20% 20%;
   box-shadow: 0px 5px 5px rgba(68, 68, 68, 0.6);
 
-  backdrop-filter: blur(10px);
-  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(2px);
   
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;

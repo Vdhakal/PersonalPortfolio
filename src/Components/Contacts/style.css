@@ -1,3 +1,8 @@
+#contact {
+  position: relative;
+  top: 0;
+  margin-bottom: 20vh;
+}
 .contact-section h1 {
   text-align: center;
   color: #ddd;

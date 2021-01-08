@@ -1,0 +1,104 @@
+// Import foundation.scss from vendor files
+@import "abzlqoq.scss";
+// Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.shapes {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+}
+
+.shape {
+  will-change: transform;
+  position: absolute;
+  border-radius: 50%;
+
+  $shapes: (
+    #787d85: 1100px,
+    #c7bab9: 890px,
+    #ffffff: 620px,
+  );
+
+  @each $color, $size in $shapes {
+    &.shape-#{index($shapes, ($color $size))} {
+      background: $color;
+      width: $size;
+      height: $size;
+      margin: (-$size/2) 0 0 (-$size/2);
+    }
+  }
+  $shapes: (
+    #787d85: 400px,
+    #c7bab9: 190px,
+    #ffffff: 20px,
+  );
+  @media screen and (max-width: 480px) {
+    @each $color, $size in $shapes {
+      &.shape-#{index($shapes, ($color $size))} {
+        background: $color;
+        width: $size;
+        height: $size;
+        margin: (-$size/2) 0 0 (-$size/2);
+      }
+    }
+  }
+}
+
+.Aboutcontent {
+  top: 0vh;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  mix-blend-mode: multiply;
+}
+
+.h1 {
+  @include rf(20, 50); // defined in imported pen;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 50;
+
+  mix-blend-mode: screen;
+  color: rgb(255, 255, 255);
+  margin-left: 20vh;
+  margin-right: 20vh;
+  text-align: justify;
+
+  color: #fff;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777,
+    0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333,
+    0px 8px 7px #001135;
+
+  font-family: "Kaushan Script", cursive;
+  @media screen and (max-width: 960px) {
+    @include rf(20, 20); // defined in imported pen;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+}
+
+.cursor {
+  position: fixed;
+  background: #2128bd;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  will-change: transform;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+::selection {
+  color: #fff;
+  background: #2128bd;
+}

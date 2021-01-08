@@ -57,7 +57,7 @@ const Navbar = ({toggle}) => {
                     </Navitem>  */}
                     
                     <Navitem>
-                        <NavLinks to ="Skills_title" spy={true} smooth={true} offset={50} duration={500} >Skills</NavLinks>
+                        <NavLinks to ="skill" spy={true} smooth={true} offset={50} duration={500} >Skills</NavLinks>
                     </Navitem>
                     
                     <Navitem>

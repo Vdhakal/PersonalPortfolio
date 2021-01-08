@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap");
-
 .main {
   display: flex;
   flex-direction: column;
@@ -23,6 +21,8 @@
   .notice {
     margin-top: 1rem;
     font-weight: 100;
+    text-shadow: horizontal-offset vertical-offset blur color;
+    font-family: cursive;
   }
 
   @media screen and (min-width: 980px) {

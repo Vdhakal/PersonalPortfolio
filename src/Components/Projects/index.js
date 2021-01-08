@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 import './styles.scss';
+import complement from './complement.jpg'
 
 function Project() {
   return (
@@ -126,43 +127,56 @@ function Image({ ratio, src }) {
 function Info() {
   return (
     <div className="info">
-      Springy cards from{' '}
-      <a target="_blank" href="https://bit.ly/382KSdo">
-        divjoy.com
-      </a>
+    <h1><span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span></h1>
       <div className="notice">(best viewed at larger screen width)</div>
     </div>
   );
 }
 
 const cards = [
+  
   {
-    title: 'Build faster ⚡️',
+    title: 'Tune It 🎹',
     description:
-      'Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
-    imageRatio: 784 / 1016
+      'A Piano Simulator app that mimics an electronic piano while also utilizing Unity’s Particle System.',
+    image: 'https://lh3.googleusercontent.com/pw/ACtC-3dEH_RPV7sfJFUEnuE6dNMHjCWkk6QxAqyLt9MoRlu9y5N1StwdEFjz9iYm6Co5AkykoP8AIjmQadZ45AjX__E8vb9SKudjwvEBHY6GfIcZ8puvh-Oqp5VPInX21d26Z_Mq9GF5lZpOpEer5WfhkH5b=w1047-h517-no?authuser=0',
+    imageRatio: 730 / 1030
   },
   {
-    title: 'Tweak anything 👩‍🎨',
+    title: 'Complement Calculator 🧮',
     description:
-      'Built with developers in mind. Change element structure, edit CSS, create components, add props and state. We give you access to the underlying React code so you can do what you need right in our tool.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_upload.svg',
-    imageRatio: 839 / 1133
-  },
-  {
-    title: 'Export your code 🚀',
-    description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
+      "A mobile app with a simple and intuitive UI that does Radix, Diminshed Radix and base conversion related computations.",
+    image: 'https://lh3.googleusercontent.com/pw/ACtC-3f0i9yqL0eZt_koAUCHHsZNeRZMS84djW8hOq6fqxqnoh1hZPUQT8CQHJ5eGx4WBWlArJZn9svaYg6fU2rfRZE5CgOTT8HPjrIKmiSRK46sGzbOfkVMSuqQurh1W_7qL70jyM1gUFKd1PcTNiRGTMMo=w1057-h939-no',
     imageRatio: 730 / 1030
   },  {
-    title: 'Export your code 🚀',
+    title: 'Castle Escape 🏃',
     description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
+      "A 2D platformer made with tilemap system in unity. The game has rewards, coins, obstacles and a working simple enemy A.I.",
+    image: 'https://lh3.googleusercontent.com/pw/ACtC-3ePYzKNrPQhftLWqtjPCGxJbdRnClzE9crJjZQUZHTMFxvK_xPeubLXiajJHcLIK0KQnNaV4BZe3toZluePKc6IBNbTkPg52ZGCb32tmcn4yq3Jt2GGpESc_NRfiYaDIT_mdnbkuimhEq9eh156lBfd=w875-h531-no?authuser=0',
     imageRatio: 730 / 1030
   }, 
+  {
+    title: 'Ride Past 🥽',
+    description:
+      'A V.R. racing android game with 3D Physics Engine utilizing kinematics, friction and collision response.',
+    image: 'https://lh3.googleusercontent.com/pw/ACtC-3frUxrZtOESM4wWSkravDn-aMf8lrtGBZQX_AxpR-aPAktXrrRoqF-wv0878C6our4U9LpLOCpxk3fQJw46s6nkmLInsLBO-SrZ5axKFBtsoo56aX2smCe_E3rx85sKeqmt2ulDuTdhZSg51INkjO5w=w913-h450-no?authuser=0',
+    imageRatio: 730 / 1030
+  },
+  {
+    title: 'Python Reddit Bot 🤖',
+    description:
+      'A Reddit bot made using PRAW API that downloads the image post that it’s tagged under and replies to the user with the text in the image which is done using pythons pytesseract library.',
+    image: 'https://logodownload.org/wp-content/uploads/2018/02/reddit-logo.png',
+    imageRatio: 730 / 1030
+  },
+  {
+    title: 'Personal Portfolio 📁',
+    description:
+      'A dynamic and responsive personal portfolio website made using React js.',
+    image: 'https://lh3.googleusercontent.com/pw/ACtC-3f3mpkydbOXXd7ghuJwmHiXDNvdQwJSd6Uw4w_cf55We8SU9tAJ85qwy5dZQL_mAGAv8d_JDFsIrWuQKn2PtRqC1R52xshRAcr3VugL4s5aD3PI8t5QLPL_1pbkNDsZKok7XHRhqJuXhrSGU5gIvw-D=w1256-h660-no?authuser=0',
+    imageRatio: 730 / 1030
+  }
+  
 ];
 
 export default Project;

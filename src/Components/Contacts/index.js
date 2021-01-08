@@ -20,8 +20,8 @@ const Contact = () => {
         <ContactContainer id="contact">
            
             <div class="contact-section">
-
-            <h1>Contact Me</h1>
+            <br/><br/>
+            <h1><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span></h1>
             <div class="border"></div>
             <form onSubmit={sendEmail} class="contact-form">
             <input type="text" name="name" field="*{name}" class="contact-form-text" placeholder="Your name" />

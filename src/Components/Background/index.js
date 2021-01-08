@@ -13,12 +13,12 @@ $(window).scroll(function() {
     var height = $(window).height();
     if($(window).scrollTop()>$maxScroll) $x=$maxScale;
 //    $('#first .background').css({transform: 'scale('+$x+','+$x+')'});
-    $('.dgKINQ').css({
+    $('.background_img').css({
         transform: 'scale('+$x+','+$x+')',
         'opacity': ((height - ($(window).scrollTop()*1.5)) / height)
     });
 
-    $('.bULZRM').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
+    $('.backText').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
     $('#tsparticles').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
     //   $("#tsparticles").css({
     //     backgroundSize: (100 + scroll/5)  + "%",
@@ -33,7 +33,7 @@ const BackgroundSection = () => {
     return (
         <>
         <BackgroundContainer>
-            <BackGroundImg/>
+            <div class = "background_img"/>
              <Particles params={{
                             "particles": {
                                 "number": {
@@ -154,11 +154,11 @@ const BackgroundSection = () => {
         </BackgroundContainer>
         
 
-            <ContentH1>
+            <div class="backText">
             <div class="glitch" data-text="Vaskar Dhakal">Vaskar Dhakal</div>
             <div class="glow">Vaskar Dhakal</div>
             <p class="subtitle">Engineer﹒Gamer﹒Developer</p>
-            </ContentH1>
+            </div>
         </>
         
     )

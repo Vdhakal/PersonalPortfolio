@@ -7,11 +7,11 @@ const Social = () => {
             <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
             <nav className="social" >
                 <ul>
-                    <li><a href="https://twitter.com/" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://facebook.com/" target="_blank">Facebook <i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://linkedin.com/" target="_blank">LinkedIn <i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://instagram.com/" target="_blank">Instagram <i class="fa fa-instagram"></i></a></li>
-                </ul>
+                    <li><a href="https://www.linkedin.com/in/vaskar-dhakal-150b2a130/" target="_blank">LinkedIn <i class="fa fa-linkedin" style={{background: "hsl(30, 65%, 60%)"}}></i></a></li>
+                    <li><a href="https://github.com/Vdhakal" target="_blank">Github <i class="fa fa-github" style={{background: " hsl(135, 35%, 45%)"}}></i></a></li>
+                    <li><a href="https://www.instagram.com/apewithanapp/" target="_blank">Instagram <i class="fa fa-instagram" style={{background: "hsl(155, 35%, 60%)"}}></i></a></li>
+                    <li ><a href="https://facebook.com/vdhakal10" target="_blank" >Facebook <i class="fa fa-facebook" style={{background: "hsl(50, 75%, 55%)"}}></i></a></li>
+                    </ul>
             </nav>
        </>
     )
