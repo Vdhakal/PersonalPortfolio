@@ -35,14 +35,10 @@ Router {
   left: 0;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-  background-image: url("flower.jpg");
-=======
 }
 
 .back {
   /* background-image: url("thor.png"); */
->>>>>>> a819fd1c1d8f7fde8ed15ca67be822f47aa06b60
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;

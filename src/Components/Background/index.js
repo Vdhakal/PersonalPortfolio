@@ -143,13 +143,8 @@ const BackgroundSection = () => {
                             "retina_detect": true,
                             "config_demo": {
                                 "hide_card": false,
-<<<<<<< HEAD
-                                "background_color": "black",
-                                "background_image": "",
-=======
                                 // "background_color": "white",
                                 // "background_image": "url('https://amymhaddad.s3.amazonaws.com/morocco-blue.png')",
->>>>>>> a819fd1c1d8f7fde8ed15ca67be822f47aa06b60
                                 "background_position": "50% 50%",
                                 "background_repeat": "no-repeat",
                                 "background_size": "cover"

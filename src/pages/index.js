@@ -4,17 +4,7 @@ import BackgroundSection from '../Components/Background';
 import Social from '../Components/Social/Social'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Navbar/Sidebar'
-<<<<<<< HEAD
-import About from '../Components/About'
-import Project from '../Components/Projects'
-import Work from '../Components/Work'
-import Skills from '../Components/Skills'
-import Contact from '../Components/Contacts'
-
-
-=======
 import backgroundImage from './thor.png';
->>>>>>> a819fd1c1d8f7fde8ed15ca67be822f47aa06b60
 
 const Home = () => {
     const[isOpen, setIsOpen] = useState(false);
