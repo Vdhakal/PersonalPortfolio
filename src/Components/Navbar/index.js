@@ -17,25 +17,10 @@ import { NavLink } from 'react-router-dom';
 const goUp=()=>{
     scroll.scrollToTop()
 }
-const goAbout=()=>{
-    scroll.scrollTo(1200);
-}
-const goProject=()=>{
-    scroll.scrollTo(2650);
-}
 
-const goWork=()=>{
-    scroll.scrollTo(3650);
+const openResume=()=>{
+    window.open('https://vdhakal.github.io/Resume/');
 }
-const goSkill=()=>{
-    scroll.scrollTo(5000);
-}
-
-const goContact=()=>{
-    scroll.scrollToBottom();
-}
-
-
 const Navbar = ({toggle}) => {
     return (
         <>
@@ -65,7 +50,7 @@ const Navbar = ({toggle}) => {
                     </Navitem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink class = "button" to ="/resume">Resume</NavBtnLink>
+                    <NavBtnLink class = "button" to ="/resume" onClick = {openResume} target="_blank">Resume</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

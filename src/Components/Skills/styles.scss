@@ -28,7 +28,7 @@
 .skillscontainer {
   width: 150px;
   height: 150px;
-  margin: 10px;
+  margin: 20px;
   transform-style: flat;
   @media screen and (max-width: 960px) {
     width: 80px;
@@ -49,6 +49,7 @@
   overflow: hidden;
   will-change: transform;
   cursor: pointer;
+
   @media screen and (max-width: 960px) {
     width: 80px;
     height: 80px;

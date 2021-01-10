@@ -12,7 +12,6 @@ $(window).scroll(function() {
     var $x=$(window).scrollTop()/400+1;
     var height = $(window).height();
     if($(window).scrollTop()>$maxScroll) $x=$maxScale;
-//    $('#first .background').css({transform: 'scale('+$x+','+$x+')'});
     $('.background_img').css({
         transform: 'scale('+$x+','+$x+')',
         'opacity': ((height - ($(window).scrollTop()*1.5)) / height)
@@ -20,13 +19,7 @@ $(window).scroll(function() {
 
     $('.backText').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
     $('#tsparticles').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
-    //   $("#tsparticles").css({
-    //     backgroundSize: (100 + scroll/5)  + "%",
-    //     top: -(scroll/10)  + "%",
-    // });
-    // $(".bULZRM").css({
-    //     top: -(scroll/10)  + "%",
-    // });
+  
   });
 
 const BackgroundSection = () => {

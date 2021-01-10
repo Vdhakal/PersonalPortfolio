@@ -71,7 +71,7 @@ position:absolute;
 width:54%;
 height:20%;
 top:60%;
-left:25%;
+left:30%;
 color: white;
 z-index:-1;	
 @media screen and (max-width: 960px) {

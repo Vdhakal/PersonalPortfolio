@@ -33,7 +33,7 @@ function Stack({ image, background }) {
 
 const Skills = () => {
     return (
-        <div id="skill"><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div id="skill"><br/><br/>
         <div id="Skills_title">
         <h1><span>S</span><span>K</span><span>I</span><span>L</span><span>L</span><span>S</span></h1>
         </div>

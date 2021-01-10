@@ -1,10 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap");
 
 .button {
-  min-width: 300px;
+  min-width: 900px;
   min-height: 60px;
-  font-family: 'Goldman', cursive;
+  font-family: "Goldman", cursive;
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -39,17 +38,20 @@ button::before {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
   color: #313133;
   transform: translateY(-6px);
+  cursor: pointer;
 }
 
 button:hover::before,
 button:focus::before {
   opacity: 1;
+  cursor: pointer;
 }
 
 button::after {
@@ -57,19 +59,21 @@ button::after {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  border: 6px solid #00ffcb;
+  border: 6px solid #ff002b;
   position: absolute;
   z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ring 1.5s infinite;
+  cursor: pointer;
 }
 
 button:hover::after,
 button:focus::after {
   animation: none;
   display: none;
+  cursor: pointer;
 }
 
 @keyframes ring {
