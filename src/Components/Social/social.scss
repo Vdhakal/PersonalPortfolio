@@ -1,4 +1,14 @@
-a {
+.socialContainerBig {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+.socialContainerSmall {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+.social a {
   color: #fff;
   text-decoration: none;
   z-index: 1200;
@@ -102,4 +112,49 @@ a {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
   z-index: 1200;
+}
+
+//For mobile viewing
+.menu {
+  position: fixed;
+  z-index: 1200;
+}
+.menu i {
+  position: fixed;
+  background-color: black;
+  top: 80vh;
+  padding: 15px 10px;
+  border: 3px solid rgba(175, 187, 255, 0.575);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.menu i.hidden {
+  visibility: hidden;
+}
+.menu i {
+  padding: 13px 15px;
+}
+.menu a :nth-child(1) {
+  padding: 13px 15px;
+}
+.fa-linkedin.show {
+  transform: rotate(-90deg) translate(50px) rotate(90deg);
+}
+.menu a :nth-child(2) {
+  padding: 13px 15px;
+}
+.fa-github.show {
+  transform: rotate(-30deg) translate(50px) rotate(30deg);
+}
+.menu a :nth-child(3) {
+  padding: 13px 15px;
+}
+.fa-instagram.show {
+  transform: rotate(30deg) translate(50px) rotate(-30deg);
+}
+.menu a :nth-child(4) {
+  padding: 13px 15px;
+}
+.fa-facebook.show {
+  transform: rotate(90deg) translate(50px) rotate(-90deg);
 }

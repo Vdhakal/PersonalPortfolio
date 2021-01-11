@@ -9,15 +9,31 @@ export const SidebarContainer = styled.aside`
     z-index:999;
     width:100%;
     height:100%;
-    background: black;
+    background: rgb(19 19 20 /98%);
     display: grid;
     align-tems:center;
     top:0;
-    left: 0;
-    transition: 0.3s ease-in-out;
+    left: 0;	
+    animation: slidein .6s;
+    animation-iteration-count:10;
     overflow: hidden;
     opacity: ${({ isOpen }) => (isOpen ? '100%': '0')};
     top: ${({isOpen}) => (isOpen ? '0': '-100%')};
+    @keyframes slidein {
+        from {
+            transform: translateX(100%);
+        }
+      
+        to {
+          transform: translatX(0%);
+        }
+        0%   {background-color:rgb(19 19 20 /0%);; }
+        25%  {background-color:rgb(19 19 20 /25%);;}
+        50%  {background-color:rgb(19 19 20 /50%);; }
+        75%  {background-color:rgb(19 19 20 /75%);;}
+        100% {background-color:rgb(19 19 20 /99%);; }
+      }
+
 `;
 
 export const CloseIcon = styled(FaTimes)`

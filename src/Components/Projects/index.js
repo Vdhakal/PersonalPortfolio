@@ -15,7 +15,7 @@ function Project() {
                   <Card>
                     <div className="card-title">{card.title}</div>
                     <div className="card-body">{card.description}</div>
-                    <a className="card-link" href={card.link}>See on Github</a>
+                    <div className="card-link"><a  href={card.link} target="_blank">See on Github</a></div>
                     <Image ratio={card.imageRatio} src={card.image} />
                   </Card>
                 </div>

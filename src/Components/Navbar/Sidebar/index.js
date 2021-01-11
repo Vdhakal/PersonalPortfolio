@@ -26,7 +26,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarMenu>
                 
                 <SidebarBtnWrap>
-                    <SidebarBtn to='/resume'>
+                    <SidebarBtn to='/Resume'>
                         Resume
                     </SidebarBtn>
                 </SidebarBtnWrap>

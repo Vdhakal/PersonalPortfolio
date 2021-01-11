@@ -18,9 +18,7 @@ const goUp=()=>{
     scroll.scrollToTop()
 }
 
-const openResume=()=>{
-    window.open('https://vdhakal.github.io/Resume/');
-}
+
 const Navbar = ({toggle}) => {
     return (
         <>
@@ -50,7 +48,7 @@ const Navbar = ({toggle}) => {
                     </Navitem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink class = "button" to ="/resume" onClick = {openResume} target="_blank">Resume</NavBtnLink>
+                    <NavBtnLink class = "button" to ="/Resume" target="_blank">Resume</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

@@ -9,7 +9,7 @@ import $ from "jquery";
 $(window).scroll(function() {
     var $maxScroll=1000;
     var $maxScale=1;
-    var $x=$(window).scrollTop()/400+1;
+    var $x=$(window).scrollTop()/300+1;
     var height = $(window).height();
     if($(window).scrollTop()>$maxScroll) $x=$maxScale;
     $('.background_img').css({

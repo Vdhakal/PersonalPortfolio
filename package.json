@@ -10,6 +10,7 @@
     "canvaskit-wasm": "^0.22.0",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
+    "github-pages": "^3.0.2",
     "gl-matrix": "^3.3.0",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",

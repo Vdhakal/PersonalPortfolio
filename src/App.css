@@ -125,3 +125,26 @@ h1 span:nth-child(8) {
 h1 span:nth-child(9) {
   animation-delay: 0.4s;
 }
+.card a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffc552;
+}
+.card a::after {
+  content: "";
+  background: #6ea8ff62;
+  position: absolute;
+  left: 5px;
+  bottom: -3px;
+  width: calc(100% - 3px);
+  height: calc(100% - 8px);
+  z-index: -1;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+.card a:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: calc(100% - 1px);
+  height: 100%;
+}
