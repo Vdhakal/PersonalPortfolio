@@ -10,10 +10,21 @@ import {
     SidebarBtnWrap
 } from './SidebarElements';
 
+const openResume=()=>{
+    window.open('https://vdhakal.github.io/Resume/');
+}
+
+function reset_animation() {
+    var el = document.getElementById('sidebar');
+    el.style.animation = 'none';
+    el.focus(); /* trigger reflow */
+    el.style.animation = null;
+}
+
 const Sidebar = ({isOpen, toggle}) => {
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon  isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer id="sidebar" isOpen={isOpen} onClick={toggle} >
+            <Icon  isOpen={isOpen} onClick={toggle, reset_animation}>
                 <CloseIcon/>
             </Icon>
             
@@ -26,7 +37,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarMenu>
                 
                 <SidebarBtnWrap>
-                    <SidebarBtn to='/Resume'>
+                    <SidebarBtn to='/Resume' onClick = {openResume} target="_blank">
                         Resume
                     </SidebarBtn>
                 </SidebarBtnWrap>

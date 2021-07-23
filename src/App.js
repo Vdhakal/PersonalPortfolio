@@ -5,10 +5,24 @@ import Home from './pages';
 import $ from 'jquery'
 import React, {useState, useEffect} from 'react';
 
+$(document).ready(function() {
+function nextMsg() {
+   $('#message').html(messages.pop()).fadeIn(500).delay(1000).fadeOut(500, nextMsg);
+   $('.menu i').click(function(){
+    $('.menu a i').toggleClass('hidden show') ;
+  })
+};
 
+var messages = [
+    "Please Wait...",
+    "Any moment now...",
+    "Almost there...",
+    "We're here!"
+].reverse();
 
-$("#message").delay(1000).fadeOut();
-
+$('#message').hide();
+nextMsg();
+})
 const App=() => {
 
     const [loading, setLoading] = useState(false);
@@ -24,7 +38,7 @@ const App=() => {
         <>
         {
             loading ?  (<div class="loadingContainer"><div class="loader">
-             <span id="message">Please wait..</span>
+             <span id="message">Please Wait...</span>
           </div></div>):(
         
             <Router> 

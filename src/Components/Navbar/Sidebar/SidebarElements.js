@@ -2,43 +2,32 @@ import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkScroll} from 'react-scroll';
+import { keyframes } from 'styled-components';
 
+
+
+
+export const CloseIcon = styled(FaTimes)`
+    color: #fff;
+`;
 
 export const SidebarContainer = styled.aside`
     position:fixed;
     z-index:999;
     width:100%;
     height:100%;
-    background: rgb(19 19 20 /98%);
+    background: rgb(10 8 5 /100%);
     display: grid;
     align-tems:center;
-    top:0;
+    top:0; 
     left: 0;	
-    animation: slidein .6s;
-    animation-iteration-count:10;
+    transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);   
     overflow: hidden;
     opacity: ${({ isOpen }) => (isOpen ? '100%': '0')};
     top: ${({isOpen}) => (isOpen ? '0': '-100%')};
-    @keyframes slidein {
-        from {
-            transform: translateX(100%);
-        }
-      
-        to {
-          transform: translatX(0%);
-        }
-        0%   {background-color:rgb(19 19 20 /0%);; }
-        25%  {background-color:rgb(19 19 20 /25%);;}
-        50%  {background-color:rgb(19 19 20 /50%);; }
-        75%  {background-color:rgb(19 19 20 /75%);;}
-        100% {background-color:rgb(19 19 20 /99%);; }
-      }
 
 `;
 
-export const CloseIcon = styled(FaTimes)`
-    color: #fff;
-`;
 
 export const Icon = styled.div`
     position:absolute;

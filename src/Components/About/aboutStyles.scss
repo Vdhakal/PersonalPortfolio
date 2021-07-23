@@ -11,6 +11,8 @@
   overflow: hidden;
   @media screen and (max-width: 480px) {
     background: rgb(75, 73, 73);
+    top: 25vh;
+    left: 45vh;
   }
 }
 
@@ -44,6 +46,7 @@
         background: $color;
         width: $size;
         height: $size;
+        top: 20vh;
         margin: (-$size/2) 0 0 (-$size/2);
       }
     }
@@ -64,7 +67,7 @@
 }
 
 .h1 {
-  @include rf(20, 50); // defined in imported pen;
+  @include rf(20, 50);
 
   font-family: Montserrat, sans-serif;
   font-weight: 50;
@@ -82,26 +85,9 @@
 
   font-family: "Kaushan Script", cursive;
   @media screen and (max-width: 960px) {
-    @include rf(20, 20); // defined in imported pen;
+    @include rf(20, 20);
     margin-left: 5vh;
     margin-right: 5vh;
+    mix-blend-mode: normal;
   }
-}
-
-.cursor {
-  position: fixed;
-  background: #2128bd;
-  width: 20px;
-  height: 20px;
-  margin: -10px 0 0 -10px;
-  border-radius: 50%;
-  will-change: transform;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-}
-
-::selection {
-  color: #fff;
-  background: #2128bd;
 }

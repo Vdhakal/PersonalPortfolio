@@ -12,13 +12,14 @@ import {
     NavBtnLink} from './NavbarElements';
 import {animateScroll as scroll} from 'react-scroll'
 import './Button.css';
-import { NavLink } from 'react-router-dom';
 
 const goUp=()=>{
     scroll.scrollToTop()
 }
 
-
+const openResume=()=>{
+    window.open('https://vdhakal.github.io/Resume/');
+}
 const Navbar = ({toggle}) => {
     return (
         <>
@@ -48,7 +49,7 @@ const Navbar = ({toggle}) => {
                     </Navitem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink class = "button" to ="/Resume" target="_blank">Resume</NavBtnLink>
+                    <NavBtnLink class = "button" to ="/Resume" onClick = {openResume} target="_blank">Resume</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

@@ -2,11 +2,7 @@ import React from 'react';
 import './social.scss'
 import $ from 'jquery'
 
-$(window).ready(function(){
-    $('.menu i').click(function(){
-      $('.menu a i').toggleClass('hidden show') ;
-    })
-  })
+
 
 const Social = () => {
     return (
@@ -22,7 +18,7 @@ const Social = () => {
                     </ul>
             </nav>
        </div>
-       <div className="socialContainerSmall">
+       <div id="mobilesidebar" className="socialContainerSmall">
             <div class="menu">
                 <a href="https://www.linkedin.com/in/vaskar-dhakal-150b2a130/" target="_blank"><i class="fa fa-linkedin hidden" style={{background: "rgb(219 153 87 / 80%)"}} ></i></a>
                 <a href="https://github.com/Vdhakal" target="_blank"><i class="fa fa-github hidden" style={{background: " rgb(75 155 95 / 80%)"}}></i></a>
