@@ -134,7 +134,15 @@ function Info() {
 }
 
 const cards = [
-  
+  {
+    title: 'AIMS Fuel Dispatcher App 🚚',
+    description:
+      'AIMS is a software company that creates software solutions for petroleum distributors. As a part of the project, our group created a mobile app for their company. The AIMS Dispatcher Mobile App is a phone or tablet application tightly integrated with the AIMS Dispatcher web app. The mobile app received data from, and sent data to, AIMS Dispatcher.',
+    link:
+      "https://github.com/Vdhakal/git-set-code",
+    image: 'https://lh3.googleusercontent.com/pw/AM-JKLVYHQJH3UbBKzDDfSbilm3zLXX2ffX5B--uepo7ImXQEEgikKTXSiFu2j3JDLXrubskSi5CP7lI7ft97OYCeRW36BtAvTYHus8ic7RmaYaBGkFooqIWz3t9dFq4I1RwODBYQPOXHC9WlKqJ2tzxwMPDLg=w1047-h1011-no',
+    imageRatio: 730 / 1030
+  },
   {
     title: 'Tune It 🎹',
     description:
@@ -186,7 +194,7 @@ const cards = [
       'A dynamic and responsive personal portfolio website made using React js.',
       link:
       "https://github.com/Vdhakal/PersonalPortfolio",
-      image: 'https://lh3.googleusercontent.com/pw/ACtC-3f3mpkydbOXXd7ghuJwmHiXDNvdQwJSd6Uw4w_cf55We8SU9tAJ85qwy5dZQL_mAGAv8d_JDFsIrWuQKn2PtRqC1R52xshRAcr3VugL4s5aD3PI8t5QLPL_1pbkNDsZKok7XHRhqJuXhrSGU5gIvw-D=w1256-h660-no?authuser=0',
+      image: 'https://lh3.googleusercontent.com/pw/AM-JKLWsIwIYJ-NBIcNQS37VYtvUjKnPCa3-2Juc43NZRXEb2cCvZQTXbGJnU5fO-Dm82RJyNRA4e3_p-0flrkw0gQKmQZtiHu7XMRTVgJ_gwep5dga9KsbdVMfH7H267el5H1P144wLqzHTf9wOMmx7i2izCw=w944-h495-no',
     imageRatio: 730 / 1030
   }
   

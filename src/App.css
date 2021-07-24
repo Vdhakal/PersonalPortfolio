@@ -5,6 +5,7 @@ html {
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  cursor: url("/src/Arrow.png"), auto;
 }
 html {
   background-color: black;
@@ -12,6 +13,7 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -19,6 +21,7 @@ body {
 html::-webkit-scrollbar {
   display: none;
 }
+
 Router {
   box-sizing: border-box;
   padding: 0;

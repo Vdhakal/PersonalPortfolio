@@ -15,9 +15,9 @@ function nextMsg() {
 
 var messages = [
     "Please Wait...",
-    "Any moment now...",
-    "Almost there...",
-    "We're here!"
+    "Some extra touches.",
+    "For you!",
+    "We've arrived!"
 ].reverse();
 
 $('#message').hide();

@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
                 <NavLogo to='/' onClick={goUp}>VD</NavLogo>
                 <MobileIcon onClick={toggle}><FaBars /></MobileIcon>
                 <NavMenu>
-                    <Navitem>
+                    <Navitem class = "navItem">
                         <NavLinks to ="about" spy={true} smooth={true} offset={50} duration={500} >About</NavLinks>
                     </Navitem>
                     
