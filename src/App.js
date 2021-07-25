@@ -14,10 +14,11 @@ function nextMsg() {
 };
 
 var messages = [
-    "Please Wait...",
-    "Some extra touches.",
-    "For you!",
-    "We've arrived!"
+    "Please wait...",
+    "Giving it a few touches..",
+    "Does anyone even read this?",
+    "Your patience is exemplary.",
+    "I hope you'll enjoy."
 ].reverse();
 
 $('#message').hide();
@@ -31,7 +32,7 @@ const App=() => {
         setLoading(true);
         setTimeout(()=>{
             setLoading(false);
-        }, 8000)
+        }, 10000)
     }, [])
 
     return(

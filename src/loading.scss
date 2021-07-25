@@ -8,8 +8,8 @@
   overflow: hidden;
 }
 .loader {
-  width: 10em;
-  height: 10em;
+  width: 14em;
+  height: 14em;
   font-size: 25px;
   box-sizing: border-box;
   border-top: 0.3em solid hotpink;
@@ -45,7 +45,7 @@
   width: inherit;
   height: inherit;
   text-align: center;
-  line-height: 10em;
+  line-height: 14em;
   font-family: sans-serif;
   animation: rotating 2s linear infinite;
   --direction: -1;

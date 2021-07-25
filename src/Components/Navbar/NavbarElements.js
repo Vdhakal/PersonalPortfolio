@@ -62,7 +62,7 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%,120%);
-    cursor: pointer;
+    cursor: url('/LinkSelect.png'), pointer;
     color: white;
   }
 `;
@@ -86,7 +86,7 @@ export const Navitem = styled.li`
   margin-right: 22px;
   background: transparent;
   font-family: 'Goldman', cursive;
-  cursor: pointer;
+  cursor: url('/LinkSelect.png'), pointer;
   src: url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
 
 `;
@@ -98,7 +98,7 @@ export const NavLinks = styled(LinkScroll)`
   text-decoration: none;
   padding: 0 1rem;
   heoght: 100%;
-  cursor: pointer;
+  cursor: url('/LinkSelect.png'), pointer;
 
   &.active{
     border-bottom: 3px solid #01bf71;
@@ -109,7 +109,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   background: transparent;
-  cursor: pointer;
+  cursor: url('/LinkSelect.png'), pointer;
   @media screen and (max-width: 768px){
     display: none;
   }
@@ -129,6 +129,7 @@ export const NavBtnLink = styled.nav`
   color:#FFFFFF;
   text-align:center;
   transition: all 0.2s ease-in-out;
+  cursor: url('/LinkSelect.png'), pointer;
   &:hover{
       transition: all 0.2s ease-in-out;
       color: #000000;

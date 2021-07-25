@@ -3,6 +3,12 @@
   position: absolute;
   top: auto;
 }
+
+:root {
+  /* Set neon color */
+  --neon-text-color: rgb(0, 47, 255);
+  --neon-border-color: #ff00ae;
+}
 .glitch {
   color: rgb(223, 191, 191);
   position: relative;
@@ -56,6 +62,79 @@
     text-shadow: -3px 0 lightgreen;
   }
 }
+.phoneText {
+  position: absolute;
+  top: 16%;
+  left: 3%;
+  line-height: 1em;
+  letter-spacing: 0.4em;
+  font-family: "Rancho", cursive;
+  font-size: 2.4rem;
+  font-weight: 200;
+  font-style: italic;
+  color: rgb(252, 252, 252);
+  padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+  @media screen and (max-width: 960px) {
+    top: 55%;
+    left: 40%;
+  }
+  @media screen and (max-width: 480px) {
+    top: 16%;
+    left: 3%;
+    /*top: 70%;
+    left: 10%;
+    width: 90%;*/
+  }
+}
+
+.phoneText::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.phoneText::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.phoneText:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 1rem rgb(255, 149, 149),
+      0.2rem 0.2rem 1rem rgb(131, 170, 255), 0 0 2rem var(--neon-text-color),
+      0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color),
+      0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
+
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
+      0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color),
+      0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
 .backText {
   position: absolute;
   width: 54%;
@@ -66,9 +145,10 @@
   z-index: -1;
 
   @media screen and (max-width: 960px) {
-    top: 70%;
+    visibility: hidden;
+    /*top: 70%;
     left: 10%;
-    width: 90%;
+    width: 90%;*/
   }
 }
 .background_img {

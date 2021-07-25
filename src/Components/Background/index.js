@@ -18,6 +18,7 @@ $(window).scroll(function() {
     });
 
     $('.backText').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
+    $('.phoneText').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
     $('#tsparticles').css({'opacity': ((height - ($(window).scrollTop()*2)) / height)});
   
   });
@@ -146,7 +147,7 @@ const BackgroundSection = () => {
 
         </BackgroundContainer>
         
-
+            <div class="phoneText" contenteditable spellcheck="false">V  D<br/>a  h<br/>s  a<br/>k  k<br/>a  a<br/>r  l<br/></div>
             <div class="backText">
             <div class="glitch" data-text="Vaskar Dhakal">Vaskar Dhakal</div>
             <div class="glow">Vaskar Dhakal</div>
