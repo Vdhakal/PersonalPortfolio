@@ -63,6 +63,9 @@
   width: 100vw;
   background: black;
   mix-blend-mode: multiply;
+  @media screen and (max-width: 960px) {
+    mix-blend-mode: normal;
+  }
 }
 
 .h1 {

@@ -21,18 +21,30 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:2rem;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  @media screen and (max-width: 960px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;
+    flex-direction: column;
+  }
 }
-
+.skillsmain > div{
+  @media screen and (max-width: 960px) {
+    width: 50px;
+    height: 50px;
+  }
+}
 .skillscontainer {
   width: 150px;
   height: 150px;
   margin: 20px;
   transform-style: flat;
   @media screen and (max-width: 960px) {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     margin: 5px;
     color: white;
   }
@@ -51,8 +63,8 @@
   cursor: pointer;
 
   @media screen and (max-width: 960px) {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     margin: auto;
   }
 }

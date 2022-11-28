@@ -1,55 +1,52 @@
 import './App.css';
 import './loading.scss';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './pages';
 import $ from 'jquery'
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
-$(document).ready(function() {
-function nextMsg() {
-   $('#message').html(messages.pop()).fadeIn(500).delay(1000).fadeOut(500, nextMsg);
-   $('.menu i').click(function(){
-    $('.menu a i').toggleClass('hidden show') ;
-  })
-};
+$(document).ready(function () {
+    function nextMsg() {
+        $('#message').html(messages.pop()).fadeIn(500).delay(1000).fadeOut(500, nextMsg);
+        $('.menu i').click(function () {
+            $('.menu a i').toggleClass('hidden show');
+        })
+    };
 
-var messages = [
-    "Please wait...",
-    "Giving it a few touches..",
-    "Does anyone even read this?",
-    "Your patience is exemplary.",
-    "I hope you'll enjoy."
-].reverse();
+    var messages = [
+        "Please wait...",
+        "Giving it a few touches.."
+    ].reverse();
 
-$('#message').hide();
-nextMsg();
+    $('#message').hide();
+    nextMsg();
 })
-const App=() => {
+const App = () => {
 
     const [loading, setLoading] = useState(false);
     let [color, setColor] = useState("#50E3C2");
-    useEffect(()=>{
+    useEffect(() => {
         setLoading(true);
-        setTimeout(()=>{
+        setTimeout(() => {
             setLoading(false);
-        }, 10000)
+        }, 3000)
     }, [])
 
-    return(
+    return (
         <>
-        {
-            loading ?  (<div class="loadingContainer"><div class="loader">
-             <span id="message">Please Wait...</span>
-          </div></div>):(
-        
-            <Router> 
-                <Home />
-            </Router>
-            )
-        }
+            {
+                loading ? (<div class="loadingContainer"><div class="loader">
+                    <span id="message">Please Wait...</span>
+                </div></div>) : (
+
+                    <Router>
+                        <Home />
+                    </Router>
+                )
+            }
         </>
     )
-        
+
 }
 
 export default App;

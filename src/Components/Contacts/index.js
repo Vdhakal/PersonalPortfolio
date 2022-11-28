@@ -1,8 +1,10 @@
 import React from 'react'
 import {ContactContainer} from './ContactElements.js';
 import emailjs from "emailjs-com"
+import Card from 'react-animated-3d-card'
 
 import './style.css'
+import { Carousel } from 'react-responsive-carousel';
 
 function sendEmail(e){
     e.preventDefault();

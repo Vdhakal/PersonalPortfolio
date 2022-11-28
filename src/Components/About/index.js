@@ -22,7 +22,6 @@ document.body.addEventListener("mousemove", evt => {
 const About = () => {
     return (
         <>
-        
         <Filler />
         <AboutSection id="about">
         <br/><br/><br/><br/>
@@ -33,11 +32,9 @@ const About = () => {
               <div class="shape shape-3"></div>
           </div>
           <div class="Aboutcontent">
-          <div class="h1">Hello There!<br/><br/>I'm a software developer with over 4 years of experience in designing and programming UI and web. I’m also a game developer. I hold a Bachelors degree in Computer Science with a minor in Mathematics. I live in lovely Monroe, LA. I’m currently open to job position related, but not limited, to software, web and game development.</div>
+          <div class="h1">Hello There!<br/><br/>I'm a software developer with over 5 years of experience in designing and programming UI and web. I’m also a game developer. I hold a Bachelors degree in Computer Science with a minor in Mathematics. I live in lovely Monroe, LA. I’m currently open to job position related, but not limited, to software, web and game development.</div>
           
           </div>
-          
-        <br/><br/><br/><br/><br/><br/>
         </AboutSection>
         </>
     )

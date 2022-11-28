@@ -19,6 +19,8 @@ export const SidebarContainer = styled.aside`
     background: rgb(10 8 5 /100%);
     display: grid;
     align-tems:center;
+    font-family: "Kaushan Script", cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
     top:0; 
     left: 0;	
     transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);   
@@ -83,7 +85,7 @@ export const SidebarBtn = styled(LinkR)`
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+  font-family: "Kaushan Script", cursive;
     font-weight:300;
     font-size: 1rem;
     color:#FFFFFF;
